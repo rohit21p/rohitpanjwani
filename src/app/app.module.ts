@@ -7,6 +7,15 @@ import { HomeComponent } from 'src/app/home/home.component';
 import { AboutMeComponent } from 'src/app/about-me/about-me.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes : Routes = [
+  {path:'home', component: HomeComponent},
+  {path:'aboutme', component: AboutMeComponent},
+  {path:'resume', component: ResumeComponent},
+  {path:'contact', component: ContactComponent},
+];
 
 @NgModule({
   declarations: [
@@ -15,12 +24,15 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     AboutMeComponent,
     ResumeComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+}
