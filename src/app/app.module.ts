@@ -11,7 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes : Routes = [
-  {path:'home', component: HomeComponent},
+  {path:'', component: HomeComponent},
   {path:'aboutme', component: AboutMeComponent},
   {path:'resume', component: ResumeComponent},
   {path:'contact', component: ContactComponent},
