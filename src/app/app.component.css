@@ -1,0 +1,8 @@
+.cover {
+    display: grid;
+    height: 100vh;
+}
+
+app-footer {
+    align-content: flex-end;
+}
